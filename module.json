@@ -9,8 +9,8 @@
   },
   "authors": [
     {
-      "name": "Grok",
-      "email": "support@x.ai"
+      "name": "KouArt",
+      "email": "support@kou.com"
     }
   ],
   "systems": ["CoC7"],
@@ -24,4 +24,7 @@
       "path": "lang/en.json"
     }
   ],
+  "url": "https://github.com/KouArt/medieval-combat-inventory",
+  "manifest": "https://raw.githubusercontent.com/your-repo/medieval-combat-inventory/main/module.json",
+  "download": "https://github.com/your-repo/medieval-combat-inventory/archive/main.zip"
 }
