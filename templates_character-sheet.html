@@ -1,0 +1,103 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><form class="{{cssClass}} coc7 character" autocomplete="off">
+  <!-- Existing CoC7 Tabs -->
+  {{> "systems/CoC7/templates/actors/character-sheet.html"}}
+  
+  <!-- Add New Tab for Body and Inventory -->
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="core">Core</a>
+    <a class="item" data-tab="skills">Skills</a>
+    <a class="item" data-tab="combat">Combat</a>
+    <a class="item" data-tab="body-inventory">{{localize "MEDIEVAL.BodyInventoryTab"}}</a>
+  </nav>
+
+  <!-- Body and Inventory Tab Content -->
+  <section class="tab" data-tab="body-inventory">
+    <div class="body-inventory-container">
+      <!-- Body Diagram -->
+      <div class="body-diagram">
+        <h2>Equipped Armor</h2>
+        <div class="armor-slot">
+          <label>Helmet</label>
+          <input type="text" name="data.armor.helmet" value="{{data.armor.helmet}}" placeholder="None" readonly>
+        </div>
+        <div class="armor-slot">
+          <label>Chest</label>
+          <input type="text" name="data.armor.chest" value="{{data.armor.chest}}" placeholder="None" readonly>
+        </div>
+        <div class="armor-slot">
+          <label>Arms</label>
+          <input type="text" name="data.armor.arms" value="{{data.armor.arms}}" placeholder="None" readonly>
+        </div>
+        <div class="armor-slot">
+          <label>Gloves</label>
+          <input type="text" name="data.armor.gloves" value="{{data.armor.gloves}}" placeholder="None" readonly>
+        </div>
+        <div class="armor-slot">
+          <label>Legs</label>
+          <input type="text" name="data.armor.legs" value="{{data.armor.legs}}" placeholder="None" readonly>
+        </div>
+        <div class="armor-slot">
+          <label>Boots</label>
+          <input type="text" name="data.armor.boots" value="{{data.armor.boots}}" placeholder="None" readonly>
+        </div>
+      </div>
+
+      <!-- Grid Inventory -->
+      <div class="grid-inventory">
+        <h2>Inventory (20 Slots)</h2>
+        <div class="inventory-grid">
+          {{#each data.inventory as |item index|}}
+            <div class="inventory-slot" data-slot="{{index}}" data-item-id="{{item.id}}">
+              {{#if item.name}}
+                <span class="item-name">{{item.name}}</span>
+                <button class="item-remove" data-slot="{{index}}">Remove</button>
+              {{else}}
+                <span class="empty-slot">Empty</span>
+              {{/if}}
+            </div>
+          {{/each}}
+        </div>
+        <p>Slots Used: {{data.inventoryUsed}} / 20</p>
+      </div>
+    </div>
+  </section>
+</form>

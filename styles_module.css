@@ -1,0 +1,53 @@
+.body-inventory-container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.body-diagram {
+  flex: 1;
+}
+
+.armor-slot {
+  margin: 5px 0;
+}
+
+.armor-slot label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+.grid-inventory {
+  flex: 1;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 5px;
+}
+
+.inventory-slot {
+  border: 1px solid #ccc;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.inventory-slot .item-name {
+  font-size: 12px;
+}
+
+.inventory-slot .item-remove {
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.empty-slot {
+  color: #888;
+}

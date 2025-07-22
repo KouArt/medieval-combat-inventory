@@ -1,0 +1,27 @@
+{
+  "id": "medieval-combat-inventory",
+  "title": "Medieval Combat and Inventory",
+  "description": "Adds a Body and Inventory tab to Call of Cthulhu 7e character sheets, with armor slots and a grid-based inventory.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Grok",
+      "email": "support@x.ai"
+    }
+  ],
+  "systems": ["CoC7"],
+  "esmodules": ["scripts/module.js"],
+  "styles": ["styles/module.css"],
+  "templates": ["templates/character-sheet.hbs"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+}
