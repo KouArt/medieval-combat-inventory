@@ -1,0 +1,102 @@
+[
+  {
+    "id": "spores-in-the-mist",
+    "name": "Esporos na Névoa",
+    "type": "Evento Sobrenatural",
+    "description": "Uma névoa esverdeada invade as ruas de Hollowbrook, trazendo consigo esporos misteriosos que ameaçam infectar os habitantes da cidade.",
+    "effect": "Todos os personagens devem realizar um teste de Constituição (CON) com dificuldade Regular. Em caso de falha, o personagem é infectado pelos esporos e sofre -1d6 de HP. Personagens infectados devem realizar um novo teste a cada 1d4 horas ou o dano aumenta em mais 1d4.",
+    "narrative": "A névoa verde se espalha lentamente pelas vielas estreitas de Hollowbrook. O ar fica denso e difícil de respirar. Aqueles que inalam profundamente os esporos sentem uma queimação nos pulmões e uma fraqueza crescente.",
+    "duration": "1d6 horas",
+    "area": "Toda a cidade"
+  },
+  {
+    "id": "collective-panic",
+    "name": "Pânico Coletivo",
+    "type": "Evento Social",
+    "description": "Um surto de terror inexplicável toma conta de Hollowbrook, fazendo com que os habitantes entrem em pânico irracional.",
+    "effect": "Todas as ações sociais (Persuasão, Charme, Intimidação, Enganação) sofrem penalidade de -20%. Testes de Sanidade têm dificuldade aumentada em um nível. NPCs podem agir de forma imprevisível ou hostil.",
+    "narrative": "Gritos ecoam pelas ruas. Pessoas correm sem direção, com olhares vazios e cheios de medo. O terror é palpável no ar, como se algo invisível estivesse perseguindo a todos. Lojistas trancam suas portas, vizinhos se voltam uns contra os outros.",
+    "duration": "2d6 horas",
+    "area": "Toda a cidade"
+  },
+  {
+    "id": "emergency-quarantine",
+    "name": "Quarentena Emergencial",
+    "type": "Evento Administrativo",
+    "description": "As autoridades de Hollowbrook declaram quarentena emergencial, isolando bairros inteiros e limitando severamente a movimentação pela cidade.",
+    "effect": "Movimentação entre distritos requer um teste bem-sucedido de Furtividade ou Persuasão (dificuldade Difícil). Falha crítica resulta em prisão temporária (1d6 horas). Recursos e suprimentos ficam escassos, aumentando preços em 200%.",
+    "narrative": "Soldados da guarda bloqueiam as principais avenidas com barricadas improvisadas. Tochas iluminam os postos de controle enquanto guardas armados verificam documentos e identidades. O sino da torre soa três vezes - o sinal de quarentena total.",
+    "duration": "1d4 dias",
+    "area": "Bairros específicos ou cidade inteira"
+  },
+  {
+    "id": "fungal-infestation",
+    "name": "Infestação Fúngica",
+    "type": "Evento Orgânico",
+    "description": "Fungos bioluminescentes começam a crescer nas paredes, tetos e porões de edifícios em Hollowbrook, liberando esporos tóxicos.",
+    "effect": "Ambientes fechados contaminados requerem teste de CON a cada hora (dificuldade Regular). Falha causa 1d3 de dano e náusea (-10% em todas as ações físicas por 1 hora). Tocar os fungos diretamente causa 1d6 de dano químico.",
+    "narrative": "Uma luminescência azul-esverdeada pulsa nas sombras dos edifícios abandonados. Os fungos crescem em padrões estranhos, quase hipnóticos. O cheiro de mofo e decomposição permeia tudo. Alguns dizem que os fungos sussurram à noite.",
+    "duration": "Permanente até remoção",
+    "area": "Edifícios específicos"
+  },
+  {
+    "id": "blood-moon-rising",
+    "name": "Lua de Sangue",
+    "type": "Evento Sobrenatural",
+    "description": "A lua adquire uma tonalidade vermelho-sangue, e criaturas estranhas começam a aparecer nas sombras de Hollowbrook.",
+    "effect": "Durante a noite, todos os testes de Sanidade têm dificuldade aumentada em dois níveis. Criaturas sobrenaturais têm seus atributos aumentados em +2. Testes de Ocultismo e Mitos de Cthulhu ganham +10%.",
+    "narrative": "O céu noturno se tinge de carmesim. A lua cheia parece pulsar como um coração gigante. Sombras se movem onde não deveriam haver nada. Uivos distantes ecoam das florestas próximas. Os cães da cidade latem incessantemente.",
+    "duration": "Uma noite inteira",
+    "area": "Toda a cidade e arredores"
+  },
+  {
+    "id": "plague-outbreak",
+    "name": "Surto de Pestilência",
+    "type": "Evento Orgânico",
+    "description": "Uma doença misteriosa se espalha rapidamente por Hollowbrook, causando febre alta, delírios e marcas escuras na pele.",
+    "effect": "Contato próximo com infectados requer teste de CON (dificuldade Difícil). Falha resulta em infecção. Infectados perdem 1d6 HP por dia e sofrem -20% em todas as ações até serem curados. Cura requer Medicina (dificuldade Extrema) ou remédios especiais.",
+    "narrative": "Carretas de corpos atravessam as ruas nas primeiras horas da manhã. Médicos usam máscaras em forma de bico, recheadas com ervas aromáticas. Quartos de doentes são marcados com um X vermelho na porta. O cheiro de vinagre e incenso está por toda parte.",
+    "duration": "1d10 dias",
+    "area": "Toda a cidade"
+  },
+  {
+    "id": "mass-hallucination",
+    "name": "Alucinação Coletiva",
+    "type": "Evento Sobrenatural",
+    "description": "Os habitantes de Hollowbrook começam a ter visões compartilhadas de eventos terríveis do passado ou futuro.",
+    "effect": "Todos os personagens devem fazer um teste de Sanidade (0/1d6). Durante o evento, personagens podem ter flashbacks ou visões que fornecem pistas sobre mistérios locais, mas perdem 1d4 de Sanidade adicional ao investigar essas visões.",
+    "narrative": "As pessoas param no meio da rua, olhando fixamente para o nada. Elas descrevem as mesmas visões horríveis - torres caindo, céus rasgados, criaturas impossíveis. Alguns riem, outros choram. Alguns nunca mais falam depois.",
+    "duration": "1d6 horas",
+    "area": "Toda a cidade"
+  },
+  {
+    "id": "supply-shortage",
+    "name": "Escassez de Suprimentos",
+    "type": "Evento Administrativo",
+    "description": "As rotas de comércio para Hollowbrook são bloqueadas, causando escassez severa de alimentos, medicamentos e outros suprimentos essenciais.",
+    "effect": "Preços de todos os itens aumentam em 300%. Itens médicos e alimentos são raros, requerendo testes de Barganha ou Encontrar (dificuldade Extrema). Personagens devem consumir alimentos diariamente ou sofrer -1 em CON temporariamente (cumulativo).",
+    "narrative": "As prateleiras das lojas estão vazias. Filas se formam antes do amanhecer nos poucos estabelecimentos que ainda têm algo para vender. Brigas irrompem por um pedaço de pão. O mercado negro floresce nas tavernas escuras.",
+    "duration": "1d8 dias",
+    "area": "Toda a cidade"
+  },
+  {
+    "id": "supernatural-awakening",
+    "name": "Despertar Sobrenatural",
+    "type": "Evento Sobrenatural",
+    "description": "Um evento místico desperta poderes latentes em alguns habitantes, enquanto atrai entidades sobrenaturais para a cidade.",
+    "effect": "Personagens com POW 15+ podem manifestar habilidades estranhas (a critério do Guardião). Testes de Ocultismo e Mitos de Cthulhu ganham +20%. Entidades sobrenaturais aparecem com frequência 3x maior. Testes de Sanidade ao testemunhar fenômenos aumentam em 1d6 pontos de perda.",
+    "narrative": "Objetos flutuam espontaneamente. Pessoas comuns começam a ouvir vozes ou ver através das paredes. Espelhos mostram reflexões que se movem independentemente. Portas se abrem para lugares que não deveriam existir. A realidade parece frágil, pronta para se despedaçar.",
+    "duration": "1d4 dias",
+    "area": "Toda a cidade"
+  },
+  {
+    "id": "curfew-enforcement",
+    "name": "Toque de Recolher Rígido",
+    "type": "Evento Administrativo",
+    "description": "O conselho da cidade impõe um toque de recolher estrito, com patrulhas armadas circulando pelas ruas durante a noite.",
+    "effect": "Estar nas ruas após o anoitecer requer autorização especial ou teste de Furtividade (dificuldade Difícil). Ser capturado resulta em multa de 2d10 libras ou prisão (1d6 dias). Patrulhas são hostis e podem atacar se provocadas.",
+    "narrative": "O sino da torre marca o início do recolher. Lanternas são apagadas uma a uma nas janelas. O som de botas marchando ecoa nas ruas vazias. Qualquer movimento nas sombras é recebido com gritos de 'Quem vem lá?' e o tilintar de armas sendo desembainhadas.",
+    "duration": "Até nova ordem",
+    "area": "Toda a cidade"
+  }
+]

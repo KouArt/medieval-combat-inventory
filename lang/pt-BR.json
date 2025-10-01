@@ -1,0 +1,18 @@
+{
+  "MEDIEVAL.BodyInventoryTab": "Corpo & Inventário",
+  "MEDIEVAL.InventoryFull": "Inventário está cheio!",
+  "MEDIEVAL.EventCardsTab": "Cartas de Evento",
+  "MEDIEVAL.EventCards": "Cartas de Evento",
+  "MEDIEVAL.DrawEventCard": "Comprar Carta de Evento",
+  "MEDIEVAL.ActiveEvents": "Eventos Ativos",
+  "MEDIEVAL.NoActiveEvents": "Nenhum evento ativo",
+  "MEDIEVAL.EventName": "Evento",
+  "MEDIEVAL.EventType": "Tipo",
+  "MEDIEVAL.EventDescription": "Descrição",
+  "MEDIEVAL.EventEffect": "Efeito Mecânico",
+  "MEDIEVAL.EventNarrative": "Narrativa/Contexto",
+  "MEDIEVAL.EventDuration": "Duração",
+  "MEDIEVAL.EventArea": "Área",
+  "MEDIEVAL.ResolveEvent": "Resolver Evento",
+  "MEDIEVAL.ViewEventDetails": "Ver Detalhes"
+}

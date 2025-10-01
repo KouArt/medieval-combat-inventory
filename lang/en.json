@@ -1,4 +1,18 @@
 {
   "MEDIEVAL.BodyInventoryTab": "Body & Inventory",
-  "MEDIEVAL.InventoryFull": "Inventory is full!"
+  "MEDIEVAL.InventoryFull": "Inventory is full!",
+  "MEDIEVAL.EventCardsTab": "Event Cards",
+  "MEDIEVAL.EventCards": "Event Cards",
+  "MEDIEVAL.DrawEventCard": "Draw Event Card",
+  "MEDIEVAL.ActiveEvents": "Active Events",
+  "MEDIEVAL.NoActiveEvents": "No active events",
+  "MEDIEVAL.EventName": "Event",
+  "MEDIEVAL.EventType": "Type",
+  "MEDIEVAL.EventDescription": "Description",
+  "MEDIEVAL.EventEffect": "Effect",
+  "MEDIEVAL.EventNarrative": "Narrative",
+  "MEDIEVAL.EventDuration": "Duration",
+  "MEDIEVAL.EventArea": "Area",
+  "MEDIEVAL.ResolveEvent": "Resolve Event",
+  "MEDIEVAL.ViewEventDetails": "View Details"
 }
